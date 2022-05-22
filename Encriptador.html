@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="esp">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="reset.css/reset.css">
+        <link rel="stylesheet" href="style1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <h1><img src="imagenes/Vector.png"><h2 class="nonbre-alura">lura</h2></h1>
+            </div>
+            <div class="nombre-encriptador">
+                <h2 class="nombre-encriptador">Encriptador de Texto</h2>
+            </div>
+        </header>
+
+        <main>
+            <section class="bloque1">                
+                <label for="texto-encriptar"><input type="text" class="texto-encriptar" style="text-transform:lowercase;" value="" required placeholder="Ingrese el texto aqui"></label>
+                                               
+                <h3 class="aviso">Solo letras minusculas</h3>
+                
+                <div class="botones">
+                    <button type="button" class="encriptar" onclick="btnencriptar()">Encriptar</button>
+                    
+                    <button type="button" class="desencriptar" onclick="btndesencriptar()">Desencriptar</button>
+
+                    <button type="button" class="copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </section>
+
+            <section class="bloque2">
+                <label for="texto-desencriptar">
+                    <input type="text" class="texto-desencriptar" style="text-transform:lowercase;" value="" required placeholder="Ingrese el texto que desea desencriptar">
+                    
+                </label>
+            </section>
+
+        </main>
+
+        <footer>
+            <p class="copyriht">&copy Copyright Encriptador de Texto - 2022</p>
+            <p>Juan Carlos Morales Guzman</p>
+        </footer>
+    </body>
+    <script src="encritptar.js"></script>
+    <script src="desencriptar.js"></script>
+    <script src="copiar.js"></script>
+
+</html>
